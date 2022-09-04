@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div>
+    <div data-aos="fade-left">
       <div className="container" id="contact">
         <div className="title my-3 text-center">
           <h1>Contact Me</h1>

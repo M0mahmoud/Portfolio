@@ -19,7 +19,7 @@ import reactBootstrap from "../Images/react-bootstrap.svg";
 function Skills(props) {
   return (
     <>
-      <div className=" text-center my-5  text-nowrap ">
+      <div className=" text-center my-5  text-nowrap" data-aos="zoom-in">
         <div className="container pb-5">
           <div className="title mb-5">
             <h1>My Skills</h1>

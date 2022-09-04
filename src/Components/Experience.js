@@ -7,7 +7,7 @@ function Experiences() {
   return (
     <>
       <div className="experiences py-5">
-        <div className="container">
+        <div className="container " data-aos="fade-right" >
           <div className="title my-3 text-center">
             <h1>Education &amp; Experience</h1>
           </div>

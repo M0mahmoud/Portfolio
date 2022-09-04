@@ -9,7 +9,7 @@ function Mahmoud() {
   const myAge = parseInt(date) - 2002;
 
   return (
-    <div className="container py-5" id="about">
+    <div className="container py-5" id="about" data-aos="fade-up">
     <div className="title my-3 ">
           <h1>Who I'm</h1>
         </div>
