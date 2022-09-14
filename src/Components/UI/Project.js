@@ -3,15 +3,15 @@ import React from "react";
 // Props = url_demo |  title  | desc  | url_code  |
 
 function Project(props) {
+  const classN =`ac_project col-md-6 col-lg-4 mt-5 mb-5 mt-5 mb-5 ${props.active}`
   return (
     <>
-      <div className="col-md-6 col-lg-4 mt-5 mb-5 mt-5 mb-5" data-aos="fade-up">
+      <div className={classN} data-filter-show={props.active} data-aos="fade-up">
         <div className="card border-0">
           <a
             href={props.url_demo}
             target="_blank"
             rel="noreferrer"
-            className=""
           >
             <img src={props.img} className="card-img-top" alt={props.title} />
           </a>

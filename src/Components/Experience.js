@@ -29,7 +29,7 @@ function Experiences() {
               <p className="ms-3 ">
                 <button
                   type="button"
-                  className=" lh-base fw-normal  mb-3 btn btn-primary"
+                  className=" lh-base fw-normal text-white-50  mb-3 btn-custom"
                   data-bs-toggle="modal"
                   data-bs-target="#modal"
                 >

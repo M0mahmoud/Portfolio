@@ -85,7 +85,7 @@ function Mahmoud() {
           </div>
         </div>
           <div className="py-5 text-center">
-            <a title="CV" className="downloadCv" href={cv} download>
+            <a title="CV" className="downloadCv btn-custom" href={cv} download>
               Download CV{" "}
               <FontAwesomeIcon className="ms-2" icon={faCloudArrowDown} />
             </a>

@@ -7,7 +7,9 @@ import bondi from "../Images/bondi.jpg";
 import todo from "../Images/todo.jpg";
 import Portfolio from "../Images/portfolio.jpg";
 import Delivery from "../Images/Delivery.jpg";
-// import reduxcart from "../../Images/reduxcart.jpg";
+
+//Router
+import { Link } from "react-router-dom";
 
 function Work() {
   return (
@@ -66,15 +68,12 @@ function Work() {
                   Games I'm Playing"
             img={Portfolio}
           />
-          {/* <Project
-            url_demo="https://redux-cart05.netlify.app/"
-            url_code="https://github.com/M0mahmoud/Kalbonyan-Elmarsos/tree/main/02-Udemy/-03-Reactjs-Maximilian/Projects/redux-cart"
-            title="ReduxCart"
-            desc="Buy Your Favorite Products , Simple Web page create With React"
-            img={reduxcart}
-          /> */}
         </div>
-        <div></div>
+        <div className="all_projects text-center" data-aos="fade-up">
+          <Link to="/Portfolio/projects" className="btn-custom">
+            All Projects
+          </Link>
+        </div>
       </div>
     </>
   );
