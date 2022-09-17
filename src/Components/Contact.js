@@ -21,7 +21,7 @@ function Contact() {
     messageRef.current.value=''
   }
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="zoom-in" id="contact">
       <div className="container pt-5" id="contact">
         <div className="title my-3 text-center">
           <h1>Contact Me</h1>

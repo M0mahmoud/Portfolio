@@ -65,6 +65,7 @@ h6 {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  border: none;
 }
 .btn-custom::after {
   content: "";
@@ -99,11 +100,16 @@ h6 {
   transition-delay: 0.2s;
 }
 .btn-custom:hover::before,
-.btn-custom:hover::after,
-.btn-custom:focus {
+.btn-custom:hover::after {
   width: calc(100% + 2px);
   height: calc(100% + 2px);
   transition-delay: 0s;
+}
+.btn-custom:focus{
+  outline: none;
+}
+.btn-custom.active{
+  color: var(--text-color);
 }
 a:hover {
   color: #fff;
@@ -119,6 +125,9 @@ a:hover {
 }
 .letter-space-2 {
   letter-spacing: 1.5px;
+}
+.letter-space-4 {
+  letter-spacing: 2.5px;
 }
 /* To Top */
 .totop {

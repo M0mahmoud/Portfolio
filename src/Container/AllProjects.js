@@ -1,8 +1,52 @@
 import React from "react";
-import Project from "../Components/UI/Project";
-
-//
-import reduxcart from "../Images/reduxcart.jpg";
+// import reduxcart from "../Images/reduxcart.jpg";
+// const DATA = [
+//   {
+//     id: "1",
+//     active: "css",
+//     url_demo: "https://m0mahmoud.github.io/Template-Four/",
+//     url_code: "https://github.com/M0mahmoud/Template-Four",
+//     title: " Portfolio",
+//     desc: "I`m gonna share everything about my life Books I'm reading Games I'm Playing",
+//     img: { reduxcart },
+//   },
+//   {
+//     id: "11",
+//     active: "css",
+//     url_demo: "https://m0mahmoud.github.io/Template-Four/",
+//     url_code: "https://github.com/M0mahmoud/Template-Four",
+//     title: " Portfolio",
+//     desc: "I`m gonna share everything about my life Books I'm reading Games I'm Playing",
+//     img: { reduxcart },
+//   },
+//   {
+//     id: "2",
+//     active: "html",
+//     url_demo: "https://m0mahmoud.github.io/Template-Four/",
+//     url_code: "https://github.com/M0mahmoud/Template-Four",
+//     title: " Portfolio",
+//     desc: "I`m gonna share everything about my life Books I'm reading Games I'm Playing",
+//     img: { reduxcart },
+//   },
+//   {
+//     id: "3",
+//     active: "react",
+//     url_demo: "https://m0mahmoud.github.io/Template-Four/",
+//     url_code: "https://github.com/M0mahmoud/Template-Four",
+//     title: " Portfolio",
+//     desc: "I`m gonna share everything about my life Books I'm reading Games I'm Playing",
+//     img: { reduxcart },
+//   },
+//   {
+//     id: "4",
+//     active: "node",
+//     url_demo: "https://m0mahmoud.github.io/Template-Four/",
+//     url_code: "https://github.com/M0mahmoud/Template-Four",
+//     title: " Portfolio",
+//     desc: "I`m gonna share everything about my life Books I'm reading Games I'm Playing",
+//     img: { reduxcart },
+//   },
+// ];
 
 function AllProjects() {
 
@@ -13,52 +57,30 @@ function AllProjects() {
           <h1>My Projects</h1>
           <p className="text-white-50 text-uppercase">all projects</p>
         </div>
-        <div>
-          <ul className="list-link d-flex justify-content-center align-items-center">
-            <li data-show='all' className="mx-3 p-3  ">All</li>
-            <li data-show='css' className="mx-3 p-3  active ">HTML & CSS</li>
-            <li data-show='react' className="mx-3 p-3">React JS</li>
-            <li data-show='javascript' className="mx-3 p-3">JavaScript</li>
-            <li data-show='node' className="mx-3 p-3">Node JS</li>
-          </ul>
+        <div className="text-center">
+          <button
+            data-filter="all"
+            className="btn-custom mx-3 btn-filter active"
+          >
+            All
+          </button>
+          <button
+            data-filter="css"
+            className="btn-custom mx-3 btn-filter"
+          >
+            HTML & CSS
+          </button>
+          <button data-filter="react" className="btn-custom mx-3 btn-filter">
+            React JS
+          </button>
+          <button data-filter="js" className="btn-custom mx-3 btn-filter">
+            JavaScript
+          </button>
+          <button data-filter="node" className="btn-custom mx-3 btn-filter">
+            Node JS
+          </button>
         </div>
-        <div className="row all_projects">
-          <Project
-            active="css"
-            url_demo="https://m0mahmoud.github.io/Template-Four/"
-            url_code="https://github.com/M0mahmoud/Template-Four"
-            title=" Portfolio"
-            desc="I`m gonna share everything about my life Books I'm reading,
-                  Games I'm Playing"
-            img={reduxcart}
-          />
-          <Project
-            active="react"
-            url_demo="https://m0mahmoud.github.io/Template-Four/"
-            url_code="https://github.com/M0mahmoud/Template-Four"
-            title=" Portfolio"
-            desc="I`m gonna share everything about my life Books I'm reading,
-                  Games I'm Playing"
-            img={reduxcart}
-          />
-          <Project
-            active="node"
-            url_demo="https://m0mahmoud.github.io/Template-Four/"
-            url_code="https://github.com/M0mahmoud/Template-Four"
-            title=" Portfolio"
-            desc="I`m gonna share everything about my life Books I'm reading,
-                  Games I'm Playing"
-            img={reduxcart}
-          />
-          <Project
-            url_demo="https://m0mahmoud.github.io/Template-Four/"
-            url_code="https://github.com/M0mahmoud/Template-Four"
-            title=" Portfolio"
-            desc="I`m gonna share everything about my life Books I'm reading,
-                  Games I'm Playing"
-            img={reduxcart}
-          />
-        </div>
+        <div className="row"></div>
       </div>
     </>
   );

@@ -12,6 +12,7 @@ function App() {
         <Route exact path="/Portfolio">
           <Portfolio />
         </Route>
+        {/* <Route path="/Portfolio/projects"> */}
         <Route path="/Portfolio/projects">
           <AllProjects />
         </Route>
