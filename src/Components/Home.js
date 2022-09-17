@@ -19,20 +19,7 @@ function Home() {
             <div className="my-5">
               <p className="mt-5">Hello, I am</p>
               <h1 className=" letter-space-4 " data-aos="fade-right">
-                <span className="span-name d-1">M</span>
-                <span className="span-name d-2">a</span>
-                <span className="span-name d-3">h</span>
-                <span className="span-name d-4">m</span>
-                <span className="span-name d-5">o</span>
-                <span className="span-name d-6">u</span>
-                <span className="span-name d-7">d</span>{" "}
-                <span className="span-name d-8">M</span>
-                <span className="span-name d-9">o</span>
-                <span className="span-name d-10">h</span>
-                <span className="span-name d-11">a</span>
-                <span className="span-name d-12">m</span>
-                <span className="span-name d-13">e</span>
-                <span className="span-name d-14">d</span>
+                Mahmoud Mohamed
               </h1>
               <div className="mt-5">
                 <span className=" fs-1 fw-bold main-color ">Front End</span>
