@@ -2,14 +2,17 @@ import React from "react";
 
 import logo from "../Images/myLogo.png";
 import menu from "../Images/menu.svg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <nav className="navbar navbar-expand-md sticky-top ">
       <div className="container">
-        <a href="/">
+        {/* <a href="/">
+        </a> */}
+        <Link to="/Portfolio/">
           <img src={logo} alt="MY_LOGO" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler border-0"
           type="button"
@@ -25,13 +28,13 @@ function Header() {
         <div className="collapse  navbar-collapse rounded " id="main">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
-                className="active nav-link p-lg-3"
+              <Link
+                to="/Portfolio"
+                className=" nav-link p-lg-3"
                 aria-current="page"
-                href="#home"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link p-lg-3" href="#about">
@@ -39,9 +42,9 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link p-lg-3" href="#services">
-                Services
-              </a>
+              <Link to="/Portfolio/projects" className=" nav-link p-lg-3 ">
+                All Projects
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link p-lg-3" href="#contact">

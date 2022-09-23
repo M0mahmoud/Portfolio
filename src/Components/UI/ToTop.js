@@ -20,7 +20,7 @@ function ToTopArrow() {
   };
   return (
     <div className="totop" id="totoparrow" onClick={handlerShowArrow}>
-      <FontAwesomeIcon icon={faArrowUp} />
+      <FontAwesomeIcon className="icon" icon={faArrowUp} />
     </div>
   );
 }

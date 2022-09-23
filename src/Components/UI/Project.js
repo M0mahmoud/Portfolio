@@ -4,6 +4,7 @@ import React from "react";
 
 function Project(props) {
   const classN =`ac_project col-md-6 col-lg-4 mt-5 mb-5 mt-5 mb-5 ${props.active}`
+  const btn_class=`btn btn-primary ${props.no_demo}`
   return (
     <>
       <div className={classN} data-filter-show={props.active} data-aos="fade-up">
@@ -35,7 +36,7 @@ function Project(props) {
                 href={props.url_demo}
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-primary"
+                className={btn_class}
               >
                 Demo
               </a>

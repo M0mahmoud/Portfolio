@@ -70,7 +70,7 @@ function Work() {
           />
         </div>
         <div className="all_projects text-center" data-aos="fade-up">
-          <Link to="/Portfolio" className="btn-custom">
+          <Link to="/Portfolio/projects" className="btn-custom">
             All Projects
           </Link>
         </div>
