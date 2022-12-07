@@ -2,15 +2,23 @@
 import { Link } from "react-router-dom";
 
 //Images
-import {
-  Omnifood,
-  gpt,
-  chat,
-  delivery,
-  orderfood,
-  dasboard_1,
-  dasboard_2,
-} from "../Images/projects/index";
+// import {
+//   Omnifood,
+//   gpt,
+//   chat,
+//   delivery,
+//   orderfood,
+//   dasboard_1,
+//   dasboard_2,
+// } from "../Images/projects";
+
+import Omnifood from '../Images/projects/Omnifood.jpg'
+import gpt from '../Images/projects/gtp.png'
+import chat from '../Images/projects/chat.jpg'
+import delivery from '../Images/projects/Delivery.jpg'
+import orderfood from '../Images/projects/orderfood.jpg'
+import dasboard_1 from '../Images/projects/dasboard-1.png'
+import dasboard_2 from '../Images/projects/dasboard-2.png'
 
 function Work() {
   return (
