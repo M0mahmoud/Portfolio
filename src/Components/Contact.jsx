@@ -1,25 +1,35 @@
 import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
-  const nameRef = useRef()
-  const emailRef = useRef()
-  const messageRef = useRef()
-  const sendEmail =(e)=>{
-    e.preventDefault()
-    emailjs.sendForm('service_ipk6jzm', 'template_c79604s', form.current, '9pg8J5AW7f_ldcRHo')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
 
-    //Reset From 
-    nameRef.current.value=''
-    emailRef.current.value=''
-    messageRef.current.value=''
-  }
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ipk6jzm",
+        "template_c79604s",
+        form.current,
+        "9pg8J5AW7f_ldcRHo"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+
+    //Reset From
+    nameRef.current.value = "";
+    emailRef.current.value = "";
+    messageRef.current.value = "";
+  };
   return (
     <div data-aos="zoom-in" id="contact">
       <div className="container pt-5" id="contact">

@@ -5,9 +5,6 @@ import { faCloudArrowDown } from "@fortawesome/free-solid-svg-icons";
 import cv from "../Images/Mahmoud.pdf";
 
 function Mahmoud() {
-  const date = new Date().getFullYear();
-  const myAge = parseInt(date) - 2002;
-
   return (
     <div className="container py-5" id="about" data-aos="fade-up">
     <div className="title my-3 ">
@@ -29,7 +26,7 @@ function Mahmoud() {
                     Age :
                   </span>
                   <span className=" letter-space-2 text-white-50  fw-normal ms-3">
-                    {myAge}
+                    21
                   </span>
                 </li>
                 <li className=" mx-auto my-3">
@@ -75,7 +72,7 @@ function Mahmoud() {
                     E-mail :
                   </span>
                   <span className=" letter-space-2 text-white-50  fw-normal ms-3">
-                    houdmohamed85@gmail.com
+                    mahmoudweb05@gmail.com
                   </span>
                 </li>
                 <li></li>

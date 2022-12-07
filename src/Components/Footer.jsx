@@ -17,7 +17,7 @@ function Footer() {
           <li className="nav-item mx-3">
             <a
               className="d-flex align-items-center"
-              href="mailto:houdmohamed85@gmail.com"
+              href="mailto:mahmoudweb05@gmail.com"
             >
               <span className="me-1">E-Mail</span>
               <img

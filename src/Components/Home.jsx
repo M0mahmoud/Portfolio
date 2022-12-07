@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Lottie from "react-lottie";
+import Lottie from "react-lottie-player";
 import Typed from "typed.js";
 
 import * as intro from "../cooding.json";
@@ -38,20 +38,11 @@ const TypedReactHooksDemo = () => {
 };
 
 function Home() {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: intro,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-  //
   return (
     <>
       <div className="home" id="home" data-aos="fade-up">
-        <div className="d-flex align-items-center p-3">
-          <div className="">
+        <div className="p-3">
+          <div className="position-absolute top-50 translate-middle ps-3">
             <div className="icons_home">
               <a
                 className=" my-3 fs-5 popup"
@@ -70,23 +61,14 @@ function Home() {
                 <FontAwesomeIcon className=" main-color" icon={faLinkedin} />
               </a>
               <a
-                href="mailto:houdmohamed85@gmail.com"
+                href="mailto:mahmoudweb05@gmail.com"
                 className=" my-3 fs-5 popup"
               >
                 <FontAwesomeIcon className="main-color" icon={faEnvelope} />
               </a>
-              <a
-                href="https://instagram.com/mahma0d05?igshid=YmMyMTA2M2Y="
-                className=" my-3 fs-5 popup"
-              >
-                <FontAwesomeIcon className="main-color" icon={faInstagram} />
-              </a>
-              <a href="#about" className=" my-3 fs-5 popup">
-                <FontAwesomeIcon className="main-color" icon={faUserAlt} />
-              </a>
             </div>
           </div>
-          <div className="row align-items-center">
+          <div className="row align-items-center justify-content-around">
             <div className="col-lg-5 col-md-5 m-3 text-center">
               <p className="text-white-50">Hello, I am </p>
               <span className="d-block fs-2 my-5 my_name main-color">
@@ -97,7 +79,14 @@ function Home() {
               </span>
             </div>
             <div className="col-lg-6 col-md-6 ">
-              <Lottie options={defaultOptions} animationPosition={"center"} />
+              <Lottie
+                loop
+                animationData={intro}
+                play
+                style={{ width: "100%", height: "100%" }}
+                rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
+                className="m-auto"
+              />
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ function Experiences() {
                 Kalbonyan Elmarsos Internship
               </h4>
               <Link
-                to="/Portfolio/Experiences/Kalbonyan"
+                to="/experiences/kalbonyan"
                 className=" lh-base fw-normal text-white-50 ms-3  mb-5 btn-custom"
               >
                 Show Details
