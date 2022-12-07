@@ -1,21 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-// import htmllogo, from "../Images/skills/html5.png";
-// import css, from "../Images/skills/css.png";
-// import js, from "../Images/skills/js.png";
-// import typescript, from "../Images/skills/typescript.png";
-// import git, from "../Images/skills/git.png";
-// import github, from "../Images/skills/github.png";
-// import next, from "../Images/skills/next.png";
-// import bootstrap, from "../Images/skills/bootstrap-logo-shadow.png";
-// import react, from "../Images/skills/react.svg";
-// import api, from "../Images/skills/api.png";
-// import sql, from "../Images/skills/sql.png";
-// import node, from "../Images/skills/node.svg";
-// import amazon, from "../Images/skills/Amazon.svg";
-// import reactBootstrap, from "../Images/skills/react-bootstrap.svg";
-
 import {
   htmllogo,
   css,
@@ -31,7 +16,7 @@ import {
   node,
   amazon,
   reactBootstrap,
-} from "../Images/Skills";
+} from "../Images/Skills/index";
 
 function Skills() {
   return (

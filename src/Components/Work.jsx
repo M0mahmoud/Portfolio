@@ -10,7 +10,7 @@ import {
   orderfood,
   dasboard_1,
   dasboard_2,
-} from "../Images/projects";
+} from "../Images/projects/index";
 
 function Work() {
   return (
