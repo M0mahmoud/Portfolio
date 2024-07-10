@@ -1,41 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import "./index.css";
 
-import App from "./App";
-import Portfolio from "./pages/Portfolio";
-import AllProjects from "./pages/AllProjects";
-import Kalbonyan from "./pages/Kalbonyan"; //Try using React.lazy()
-
-const routers = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Portfolio />,
-      },
-      {
-        path: "projects",
-        element: <AllProjects />,
-      },
-      {
-        path: "experiences/kalbonyan",
-        element: <Kalbonyan />,
-      },
-    ],
-  },
-]);
+const RedirectApp = () => {
+  useEffect(() => {
+    if (window.location.hostname === "m05.vercel.app") {
+      window.location.replace("https://devmahmoud.vercel.app");
+    }
+  }, []);
+  return (
+    <div style={{ textAlign: "center", padding: "50px", color: "#fff" }}>
+      <h1>Old Domain Detected</h1>
+      <p>This site has moved. Please visit our new domain:</p>
+      <a href="https://devmahmoud.vercel.app">https://devmahmoud.vercel.app</a>
+    </div>
+  );
+};
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={routers}>
-      <App />
-    </RouterProvider>
+    <RedirectApp />
   </React.StrictMode>
 );
